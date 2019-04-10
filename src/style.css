@@ -35,7 +35,7 @@ a:link {
 
 
 .contact-nav {
-    font-size: 60px;
+    font-size: 50px;
     Font-Family: 'Bree Serif', Serif;;
 }
 
@@ -54,7 +54,7 @@ a:link {
 
 /*//////////////////////// HAMBURGER NAV///////////////////// */
 
-@media (max-width: 800px){
+@media (max-width: 900px){
 
 .nav {
     display: flex;
@@ -131,7 +131,7 @@ a:link {
     border-radius: 14px;
     z-index: 9; /* the button is directly behind the overlay */
     transform: rotate(90deg);
-    transition: transform 200ms linear, opacity 300ms linear;
+    transition: transform 100ms linear, opacity 300ms linear;
     
 }
 
