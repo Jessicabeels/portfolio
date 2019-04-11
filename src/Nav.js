@@ -9,13 +9,13 @@ const Nav = (props) => {
 
             {/* <Link className="home-nav" to="/">Jessica Beeli </Link> */}
             <Link className="about-nav" to="/about">about</Link>
-            <Link className="projects-nav" to="/projects">projects</Link>
-            <Link className="photos-nav" to="/photos">photography</Link>
+            <Link className="projects-nav" to="/projects">dev</Link>
+            <Link className="photos-nav" to="/photos">work</Link>
             
             <Link className="contact-nav" to="/contact"></Link>
             <Link className="contact-nav" to="/"> jessica beeli </Link>
             <Link className="contact-nav" to="/contact"></Link>
-            
+            {/* href = #id in container  */}
             
             <a className="linkedin-nav" href='https://www.linkedin.com/in/jessicabeeli/'>
                 <i class="fab fa-linkedin"></i>

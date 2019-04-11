@@ -7,6 +7,7 @@ import Contact from './pages/Contact.js'
 import Photos from './pages/Photos.js'
 import Projects from './pages/Projects.js'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
+import Footer from './Footer.js'
 import './style.css'
 
 
@@ -29,17 +30,22 @@ class App extends Component {
                
                
                 <Nav navToggle={navToggle} toggler={this.toggler}/>
+                
+                <div id="home">
+                    <Home/>
+                </div>
+                <Projects/>
                 <div onClick={this.toggler} className={`overlay overlay-${navToggle ? "closed" : "open"}`}></div>
                 <button className={`rotate rotate-${navToggle ? "open" : "closed"}`} onClick={this.toggler}>|||</button>
                 {/* do i need page fade??? */}
-                
-                <Switch location={location}>
+                <Footer/>
+                {/* <Switch location={location}> */}
                     <Route exact path="/" component= { Home } />
                     <Route path="/about" component={ About }/>
                     <Route path="/contact" component={ Contact } />
                     <Route path="/photos" component= { Photos }/>
                     <Route path="/projects" component={ Projects }/>
-                </Switch>
+                {/* </Switch> */}
                 <div>
                     <ScrollUpButton
                         StopPosition={0}
@@ -52,6 +58,7 @@ class App extends Component {
                         ToggledStyle={{}}
                     />
                 </div>
+               
             
             </div>
         )
