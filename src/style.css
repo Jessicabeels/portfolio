@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|VT323');
+
 * {
     margin: 0;
     /* box-sizing: border-box; */
@@ -19,7 +21,7 @@ Font-Size: 16px; */
 
 .nav {
     display: flex;
-    Font-Family: 'Ruda', Sans-Serif;
+    font-family: 'Roboto', sans-serif;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px 15px 10px 0px;
@@ -34,17 +36,30 @@ a:link {
 }
 
 
+
+
 .contact-nav {
     font-size: 50px;
-    Font-Family: 'Bree Serif', Serif;;
+    Font-Family: 'VT323', monospace;
+    color: rgb(37, 115, 189);
 }
 
+.about-nav, .photos-nav, .projects-nav {
+    color: rgb(109, 109, 109);
+}
+
+.about-nav:hover, .photos-nav:hover, .projects-nav:hover {
+    color: rgb(46, 46, 46); 
+}
 
 .fab {
     font-size: 50px;
     color: rgb(109, 109, 109);
 }
 
+.fab:hover {
+    color: rgb(46, 46, 46); 
+}
 
 @media (min-width: 800px){
     .rotate {
@@ -59,8 +74,8 @@ a:link {
 .nav {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    background-color: #1119;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     align-items: center;
     position: absolute;
@@ -79,37 +94,40 @@ a:link {
 }
 
 .nav-closed {
-    left: -100px;
+    left: -400px;
 }
 
 .nav a {
-    color: white;
+    color: #444;
     width: 100%;
+    Font-Family: 'Roboto Slab', Serif;
     text-align: center;
     padding: 5px 0;
     transition: background-color 100ms linear;
-    font-size: 15px;
+    font-size: 50px;
 }
 
 .nav a:visited,
 .nav a:active {
-    color: white;
+    color:  #444;
 }
 
 .nav a:hover {
-    background-color: #5559;
+    background-color: rgba(226, 224, 224, 0.6);
     width: 100%;
+    padding: 5px;
 }
 
 
-/* .overlay {
+.overlay {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, .8);
     position: absolute;
     transition: left 300ms linear;
-    z-index: 2; Overlay is the layer directly behind nav */
-/* } */
+    z-index: 2; 
+    /* Overlay is the layer directly behind nav */
+}
 
 
 .overlay-open {
@@ -159,17 +177,21 @@ a:link {
         grid-area: sidebar;
     }
 
-    .content {
-        grid-area: content;
-    }
+.content {
+    grid-area: content;
+}
 
-    .header {
-        grid-area: header;
-    }
+.header {
+    grid-area: header;
+    height: 50vh;
+    width: 100%;
 
-    .footer {
-        grid-area: footer;
-    }
+    
+}
+
+.footer {
+    grid-area: footer;
+}
 
 
 .wrapper {
@@ -181,12 +203,13 @@ a:link {
     "sidebar content content"
     "footer  footer  footer";
     background-color: #fff;
-    color: #444;
+    /* color: #444; */
+
 }
 
 
 .box {
-  background-color: #444;
+  /* background-color: #444; */
   color: #fff;
   border-radius: 5px;
   padding: 10px;
@@ -195,11 +218,12 @@ a:link {
 
 .header,
 .footer {
-  background-color: #999;
+  /* background-color: #999; */
 }
 
 .home-container {
-    background-color: lightseagreen;
+    background-color:#fff;
+    height: 100vh;
 }
 
 
@@ -246,10 +270,11 @@ body {
   }
 
   .box {
-      background-color: #444;
-      color: #fff;
+      /* background-color: #444; */
+      color: black;
       border-radius: 5px;
       padding: 20px;
+      border: 1px black solid;
       font-size: 150%;
 
   }

@@ -8,12 +8,12 @@ const Nav = (props) => {
         <div onClick = { toggler } className={`nav nav-${navToggle ? "closed" : "open"}`}>
 
             {/* <Link className="home-nav" to="/">Jessica Beeli </Link> */}
-            <Link className="about-nav" to="/about">About</Link>
-            <Link className="projects-nav" to="/projects">Projects</Link>
-            <Link className="photos-nav" to="/photos">Photography</Link>
+            <Link className="about-nav" to="/about">about</Link>
+            <Link className="projects-nav" to="/projects">projects</Link>
+            <Link className="photos-nav" to="/photos">photography</Link>
             
             <Link className="contact-nav" to="/contact"></Link>
-            <Link className="contact-nav" to="/">jessica beeli </Link>
+            <Link className="contact-nav" to="/"> jessica beeli </Link>
             <Link className="contact-nav" to="/contact"></Link>
             
             

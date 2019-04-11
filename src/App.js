@@ -29,7 +29,7 @@ class App extends Component {
                
                
                 <Nav navToggle={navToggle} toggler={this.toggler}/>
-                <div onClick={this.toggler} className={`overlay overlay-${navToggle ? "open" : "closed"}`}></div>
+                <div onClick={this.toggler} className={`overlay overlay-${navToggle ? "closed" : "open"}`}></div>
                 <button className={`rotate rotate-${navToggle ? "open" : "closed"}`} onClick={this.toggler}>|||</button>
                 {/* do i need page fade??? */}
                 
