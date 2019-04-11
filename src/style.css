@@ -232,7 +232,7 @@ a:link {
 
 .home-container {
     background-color: ghostwhite;
-    height: 150vh;
+    height: 140vh;
     
 }
 
@@ -240,15 +240,18 @@ a:link {
 .box content {
     display: flex;
     flex-direction: column;
+    
 }
 .sum-title {
     font-family: 'Ruda', Sans-Serif;
     font-size: 48px;
+    margin-top: 200px;
 }
 
 .summary {
     font-family: 'Roboto Slab', Serif;
     font-size: 20px; 
+    margin-left: 20px;
     margin-right: 40%;
 }
 
@@ -364,6 +367,9 @@ Font-Size: 16px; */
 }
 
 /* ///////////SIDEBAR ////////////////////////// */
+
+
+/* /////////////////////////////content/////////////////////////////////////////////// */
 
 /* ///////////////////////Projects////////////////////////// */
 

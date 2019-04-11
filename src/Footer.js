@@ -4,7 +4,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-            Footer
+            website by Jessica Beeli 2019. Made with React. 
         </div>
     )
 }
+
+export default Footer

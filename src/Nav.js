@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Scrollchor from 'react-scrollchor';
 
 const Nav = (props) => {
     const { navToggle, toggler } = props
@@ -8,13 +8,13 @@ const Nav = (props) => {
         <div onClick = { toggler } className={`nav nav-${navToggle ? "closed" : "open"}`}>
 
             {/* <Link className="home-nav" to="/">Jessica Beeli </Link> */}
-            <Link className="about-nav" to="/about">about</Link>
-            <Link className="projects-nav" to="/projects">dev</Link>
-            <Link className="photos-nav" to="/photos">work</Link>
+            <Scrollchor className="about-nav" to="#about">about</Scrollchor>
+            <Scrollchor className="projects-nav" to="#projects">dev</Scrollchor>
+            <Scrollchor className="photos-nav" to="#photos">work</Scrollchor>
             
-            <Link className="contact-nav" to="/contact"></Link>
-            <Link className="contact-nav" to="/"> jessica beeli </Link>
-            <Link className="contact-nav" to="/contact"></Link>
+            <Scrollchor className="contact-nav" to="/contact"></Scrollchor>
+            <Scrollchor className="contact-nav" to="#home" > jessica beeli </Scrollchor>
+            <Scrollchor className="contact-nav" to="/contact"></Scrollchor>
             {/* href = #id in container  */}
             
             <a className="linkedin-nav" href='https://www.linkedin.com/in/jessicabeeli/'>

@@ -9,6 +9,7 @@ import Projects from './pages/Projects.js'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import Footer from './Footer.js'
 import './style.css'
+import Scrollchor from 'react-scrollchor';
 
 
 class App extends Component {
@@ -27,25 +28,18 @@ class App extends Component {
        const { location }  = this.props //idk what this does
         return(
             <div>
-               
-               
-                <Nav navToggle={navToggle} toggler={this.toggler}/>
-                
-                <div id="home">
-                    <Home/>
-                </div>
-                <Projects/>
+
                 <div onClick={this.toggler} className={`overlay overlay-${navToggle ? "closed" : "open"}`}></div>
                 <button className={`rotate rotate-${navToggle ? "open" : "closed"}`} onClick={this.toggler}>|||</button>
-                {/* do i need page fade??? */}
+
+                <Nav navToggle={navToggle} toggler={this.toggler}/>
+                
+                <div id="home"><Home/></div>
+                <div id="projects"><Projects/></div>
+                <div id="about"><About/></div>
+                <div id="photos"><Photos/></div>
                 <Footer/>
-                {/* <Switch location={location}> */}
-                    <Route exact path="/" component= { Home } />
-                    <Route path="/about" component={ About }/>
-                    <Route path="/contact" component={ Contact } />
-                    <Route path="/photos" component= { Photos }/>
-                    <Route path="/projects" component={ Projects }/>
-                {/* </Switch> */}
+
                 <div>
                     <ScrollUpButton
                         StopPosition={0}
