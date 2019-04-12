@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className="about-container">
             
-            <div>Let's get to the point, shall we?</div>
+            <h1 className="about-title">&lt;jessica-beeli/&gt;</h1>
 
             Born and raised in Southern California, I grew up in Manhattan Beach, before moving to San Diego for college.
 
@@ -13,6 +13,8 @@ const About = () => {
 
             I've lived in Salt Lake City, Utah and Amsterdam. I'm also a dual citizen
             of both Switzerland and the United States.
+
+            Studying and Working at San Diego State University. "A Love story between a woman and a building"
         </div>
     )
 }

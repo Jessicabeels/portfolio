@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import Nav from './Nav.js'
-import { Switch, Route, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import Home from './pages/Home.js'
 import About from './pages/About.js'
-import Contact from './pages/Contact.js'
+
 import Photos from './pages/Photos.js'
 import Projects from './pages/Projects.js'
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import Footer from './Footer.js'
 import './style.css'
-import Scrollchor from 'react-scrollchor';
 
 
 class App extends Component {
@@ -25,7 +24,7 @@ class App extends Component {
     render(){
 
        const { navToggle } = this.state
-       const { location }  = this.props //idk what this does
+       
         return(
             <div>
 

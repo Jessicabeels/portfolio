@@ -5,7 +5,9 @@ import React from 'react'
 const Home = () => {
     return(
         <div className="home-container wrapper">
+            
                 <div className = "box header">
+                    
                 <div className="typebox">
                     <div className = "typewriter">
                         <h1> Making the stuff & doing the things</h1>
@@ -38,8 +40,8 @@ const Home = () => {
                     <div></div>
 
                 </div>
-                <div className = "box content">
-                    
+                <div className = "content-sum">
+                        <div className="responsive-title">Jessica Beeli</div>
                     <h1 className="sum-title">&lt;about me/&gt;</h1>
                     <p className= "summary">(the short version)</p>
                     <br /> 
@@ -52,7 +54,7 @@ const Home = () => {
                     </div>
                     
                     </div>
-                {/* <div className = "box footer"></div> */}
+               
                     
                    
             </div>
