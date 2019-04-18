@@ -33,7 +33,7 @@ const Projects = () => {
                     <div class="boxC ">
                         <div className="transbox">
                             <h4>Pub Pocket</h4> 
-                            <h6> Resource for academics to search through journals, and save them. </h6> 
+                            <h6> Digital Resource for academics to search through journals, and save them. </h6> 
                             <p>Frontend application built with React. Gets 2 apis and uses local storage to save articles of interest.</p>
 
                             <a className="project-link" href="todolistbyjess.surge.sh">Visit Site</a> 

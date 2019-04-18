@@ -46,12 +46,18 @@ const Home = () => {
                     <p className= "summary">(the short version)</p>
                     <br /> 
                     <div className= "summary">
-                        Describing myself as a 'jack-of-all trades' was something I used to not be proud of. 
-                        But now I am proud of it. Continuing to think big picture, but also being able to focus on the task
-                        at hand when I need to. Working in software testing, I was always asking why are we doing things
-                        this way. As a developer, I try to think of creating something that is not only functional, but 
-                        great. blah blah blah better words   
+                        Defining what you do can be communicated in one word, but should it be? Within modern, agile workspaces, this definition is rarely that simple. 
+                        And people are rarely that simple. 
+                        I have experience working in software testing, fullstack development in the MERN stack, and studying Java, C++, and MySQL in college. I've worked in testing, 
+                        digital marketing, and more recently grown my developement skills as an Adobe Digital Academy Scholar. 
                     </div>
+                    <br></br>
+                    <div className="summary">
+                    Thinking big picture and focusing on the user experience is what inspires me to do the work that I do.
+                    Sure, all the other bells and whistles are nice, but what it ultimately comes down to is creating something that people actually want to use. My array of "jack-of-all-trades" experiences ultimately led me to my ideal fit in project management. 
+                    Learn more about me in my &lt;about me/&gt; page <i>(coming soon)</i>.
+                    </div>
+                    {/* //big picture animation// an animation of a big picture */}
                     
                     </div>
                

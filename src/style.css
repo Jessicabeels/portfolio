@@ -49,7 +49,7 @@ a:link {
 }
 
 .about-nav, .photos-nav, .projects-nav {
-    color: rgb(109, 109, 109);
+    color: rgb(109, 109, 109) ;
 }
 
 .about-nav:hover, .photos-nav:hover, .projects-nav:hover {
@@ -473,7 +473,7 @@ margin: 50%;
     margin-left: 50px;
     margin-right: 50px;
     background-color: ghostwhite;
-   
+    
 }
 
     .projects-container >h1 {
@@ -482,11 +482,26 @@ margin: 50%;
         color: #444;
     }
 
-    .transbox > h4 {
+    div.transbox > h4 {
         margin-top: 20px; 
-        font-size: 30px;
+        /* font-size: 30px; */
+        /* font-family: 'Roboto Slab', Serif; */
+    }
+
+    div.transbox > p {
+        font-size: 15px;
+        font-family: 'Roboto Slab', Serif;
+       
+
+        
+    }
+
+    .transbox > .h6 {
+        color: rgb(62, 157, 245);
+        font-size: 20px;
         font-family: 'Roboto Slab', Serif;
     }
+    
     
     
     div.transbox {
@@ -498,7 +513,7 @@ margin: 50%;
         display: grid;
         text-align: center;
         margin: 100px;
-        /* background-position: center; */
+        font-family: 'Roboto Slab', Serif;
     }
     
     
